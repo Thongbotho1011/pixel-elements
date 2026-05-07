@@ -299,19 +299,26 @@
         }
 
         .service-content{
-            max-width: 0;
+            max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease;
+
+            transition:
+             max-height 0.45s ease,
+             padding 0.3s ease;
         }
 
         .service-inner{
-            padding: 0 24px 24px 24px;
+            padding: 0 24px 0px;
             color: var(--muted);
             line-height: 1.8;
         }
 
         .service-card.active .service-content{
-            max-height: 300px;
+            max-height: 200px;
+        }
+        
+        .service-card.active .service-inner{
+            padding: 0 24px 24px;
         }
 
         .service-card.active .plus{
